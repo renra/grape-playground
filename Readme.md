@@ -12,3 +12,5 @@ version=v2, method=PUT, path=/:version/resources/:id
 version=v2, method=DELETE, path=/:version/resources/:id  
 version=v2, method=GET, path=/:version/resources  
 version=v2, method=POST, path=/:version/resources  
+
+TODO: Investigate why Accept-Version header and parameter is not working
