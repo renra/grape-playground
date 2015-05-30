@@ -3,11 +3,7 @@ require 'grape'
 module V1
   class API < Grape::API
     format :json
-    version :v1
-
-    get :hello do
-      {message: 'Hello world!'}
-    end
+    version :v1, using: :accept_version_header
 
     namespace :resources do
       desc 'Returns a resource by id'
